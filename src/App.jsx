@@ -1,10 +1,11 @@
 import React from 'react'
+import Hooks from './components/hooks'
 
 const App = () => {
   return (
-    <div>
-      <h1>hellow</h1>
-    </div>
+    <>
+      <Hooks />
+    </>
   )
 }
 
