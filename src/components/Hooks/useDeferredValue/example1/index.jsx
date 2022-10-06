@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Child1 from './child1';
+import Child1 from './Child1';
 
 const Example1 = () => {
     const [input, setInput] = useState('');

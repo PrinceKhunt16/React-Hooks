@@ -1,5 +1,5 @@
 import React from 'react'
-import Example1 from './example1'
+import Example1 from './Example1'
 
 const UseCallback = () => {
     return (

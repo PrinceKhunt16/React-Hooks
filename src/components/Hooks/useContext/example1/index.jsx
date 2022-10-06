@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { createContext } from 'react'
-import Child1 from './child1';
-import Child2 from './child2';
+import Child1 from './Child1';
+import Child2 from './Child2';
 
 export const UserContext = createContext(null);
 

@@ -1,11 +1,11 @@
 import React, { forwardRef, useImperativeHandle } from 'react'
 import { useState } from 'react'
 
-const Child1Example1 = (props, ref) => {
+const Child1 = (props, ref) => {
     const [toggle, setToggle] = useState(false);
 
     useImperativeHandle(ref, () => ({
-        alterToggle(){
+        alterToggle: () => {
             setToggle(!toggle);
         }
     }));
@@ -18,4 +18,4 @@ const Child1Example1 = (props, ref) => {
     )
 }
 
-export default forwardRef(Child1Example1);
+export default forwardRef(Child1);

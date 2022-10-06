@@ -1,6 +1,6 @@
 import React from 'react'
-import Example1 from "./example1"
-import Example2 from "./example2"
+import Example1 from "./Example1"
+import Example2 from "./Example2"
 
 const UseState = () => {
     return (

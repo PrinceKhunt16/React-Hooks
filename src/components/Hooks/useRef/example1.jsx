@@ -1,18 +1,23 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 
 const Example1 = () => {
+    const [value, setValue] = useState('');
     const inputRef = useRef(null);
 
-    const handleChange = () => {
+    const setDefault = () => {
         inputRef.current.value = "";
     };
 
+    const handleChange = (inputRef) => {
+        setValue(inputRef.current.value);
+    }
+
     return (
         <>
-            <input type="text" placeholder="Prince Khunt" ref={inputRef} />
-            <button onClick={handleChange}>Change Name</button>
+            <input value={value} ref={inputRef} onChange={() => handleChange(inputRef)} type="text" placeholder="" />
+            <button onClick={setDefault}>Reset Name</button>
         </>
     );
 }
 
-export default Example1
+export default Example1;

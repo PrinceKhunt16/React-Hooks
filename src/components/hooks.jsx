@@ -1,15 +1,15 @@
 import React from 'react'
-import UseState from './Hooks/useState'
-import UseEffect from './Hooks/useEffect'
-import UseMemo from './Hooks/useMemo'
-import UseReducer from './Hooks/useReducer'
-import UseRef from './Hooks/useRef'
-import UseLayoutEffect from './Hooks/useLayoutEffect'
-import UseImperativeHandle from './Hooks/useImperativeHandle'
-import UseContext from './Hooks/useContext'
-import UseCallback from './Hooks/useCallback'
-import UseTransition from './Hooks/useTransition'
-import UseDeferredValue from './Hooks/useDeferredValue'
+import UseState from './Hooks/UseState'
+import UseEffect from './Hooks/UseEffect'
+import UseMemo from './Hooks/UseMemo'
+import UseReducer from './Hooks/UseReducer'
+import UseRef from './Hooks/UseRef'
+import UseLayoutEffect from './Hooks/UseLayoutEffect'
+import UseImperativeHandle from './Hooks/UseImperativeHandle'
+import UseContext from './Hooks/UseContext'
+import UseCallback from './Hooks/UseCallback'
+import UseTransition from './Hooks/UseTransition'
+import UseDeferredValue from './Hooks/UseDeferredValue'
 
 const Hooks = () => {
   return (
@@ -20,11 +20,11 @@ const Hooks = () => {
       {/* <UseReducer /> */}
       {/* <UseRef /> */}
       {/* <UseLayoutEffect /> */}
-      {/* <UseImperativeHandle /> */}
+      <UseImperativeHandle />
       {/* <UseContext /> */}
       {/* <UseCallback /> */}
       {/* <UseTransition /> */}
-      <UseDeferredValue />
+      {/* <UseDeferredValue /> */}
     </>
   )
 }

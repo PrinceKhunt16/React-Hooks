@@ -1,5 +1,5 @@
 import React from 'react'
-import Exmaple1 from './exmaple1'
+import Exmaple1 from './Exmaple1'
 
 const UseLayoutEffect = () => {
     return (
