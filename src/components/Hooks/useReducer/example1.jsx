@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react'
 
 const reducer = (state, action) => {
-    switch(action.type){
+    switch (action.type) {
         case "INCREMENT_COUNT":
             return {
                 ...state,
@@ -19,7 +19,7 @@ const reducer = (state, action) => {
 
 const Example1 = () => {
     const [state, dispatch] = useReducer(reducer, {
-        count: 0, 
+        count: 0,
         showText: true
     });
 
@@ -27,8 +27,8 @@ const Example1 = () => {
         <>
             <h1>{state.count}</h1>
             <button onClick={() => {
-                dispatch({type: "INCREMENT_COUNT"});
-                dispatch({type: "TOGGLE_SHOWTEXT"});
+                dispatch({ type: "INCREMENT_COUNT" });
+                dispatch({ type: "TOGGLE_SHOWTEXT" });
             }}>Get Show</button>
             {state.showText && <p>How are you ?</p>}
         </>

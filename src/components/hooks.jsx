@@ -16,11 +16,11 @@ const Hooks = () => {
     <>
       {/* <UseState /> */}
       {/* <UseEffect /> */}
-      {/* <UseMemo /> */}
+      <UseMemo />
       {/* <UseReducer /> */}
       {/* <UseRef /> */}
       {/* <UseLayoutEffect /> */}
-      <UseImperativeHandle />
+      {/* <UseImperativeHandle /> */}
       {/* <UseContext /> */}
       {/* <UseCallback /> */}
       {/* <UseTransition /> */}

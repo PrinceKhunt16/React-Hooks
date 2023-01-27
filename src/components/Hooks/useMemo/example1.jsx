@@ -46,7 +46,9 @@ const Example1 = () => {
                 onClick={() => {
                     setToggle(!toggle);
                 }}
-            >Toggle</button>
+            >
+                Toggle
+            </button>
             {toggle && <h1> toggle </h1>}   
         </div>
     )
