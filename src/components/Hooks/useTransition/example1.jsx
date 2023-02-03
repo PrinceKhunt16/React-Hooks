@@ -9,13 +9,13 @@ const Example1 = () => {
         setInput(e.target.value);
 
         startTransition(() => {
-            const arr = [];
+            const nums = [];
 
             for(let i = 0; i < 10000; i++){
-                arr.push(e.target.value);
+                nums.push(e.target.value);
             }
 
-            setList(arr);
+            setList(nums);
         });
     }
 

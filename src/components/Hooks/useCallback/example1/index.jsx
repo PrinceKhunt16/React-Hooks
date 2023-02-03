@@ -1,21 +1,20 @@
 import React, { useState } from 'react'
-import { useCallback } from 'react';
-import Child1 from './Child1';
+import { useCallback } from 'react'
+import Child1 from './Child1'
 
 const Example1 = () => {
-    const [counter, setCounter] = useState(0);
-    const [calculate, setCalculate] = useState(0);
+    const [counter, setCounter] = useState(0)
+    const [calculate, setCalculate] = useState(0)
 
     const increment = () => {
-        console.log('counter called');
-        setCounter(counter + 1);
+        console.log('counter called')
+        setCounter(counter + 1)
     }
 
     const calculateData = useCallback((data) => {
-        console.log('calculateData called');
-
-        setCalculate(data);
-    }, [calculate]);
+        console.log('calculateData called')
+        setCalculate(data)
+    }, [])
 
     return (
         <div>

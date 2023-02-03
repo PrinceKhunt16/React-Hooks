@@ -16,7 +16,7 @@ const Hooks = () => {
     <>
       {/* <UseState /> */}
       {/* <UseEffect /> */}
-      <UseMemo />
+      {/* <UseMemo /> */}
       {/* <UseReducer /> */}
       {/* <UseRef /> */}
       {/* <UseLayoutEffect /> */}

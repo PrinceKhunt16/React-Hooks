@@ -1,0 +1,60 @@
+1. What is useState hook ?
+   The useState is a Hook that allows you to have state variables in functional components . so basically useState is the ability to encapsulate local state in a functional component. React has two types of components, one is class components which are ES6 classes that extend from React and the other is functional components. Class components a Component and can have state and lifecycle methods: class Message extends React. The  useState hook is a special function that takes the initial state as an argument and returns an array of two entries.  UseState encapsulate only singular value from the state, for multiple state need to have useState calls.
+
+   The React useState Hook allows us to track state in a function component.
+
+   State generally refers to data or properties that need to be tracking in an application.
+
+
+2. What is useCallback hook ?
+   The useCallback is a react hook that returns a memoized callback when passed a function and a list of dependencies as parameters. It’s very useful when a component is passing a callback to its child component to prevent the rendering of the child component. It only changes the callback when one of its dependencies gets changed.
+
+   It depends on referential equality. In javascript, functions are first-class citizens, meaning that a function is a regular object. Hence, two function objects even when they share the same code are two different objects. Just remember that a function object is referentially equal only to itself.
+
+
+3. What is useMemo hook ?
+   The useMemo is similar to useCallback hook as it accepts a function and a list of dependencies but it returns the memoized value returned by the passed function. It recalculated the value only when one of its dependencies change. It is useful to avoid expensive calculations on every render when the returned value is not going to change.
+
+   The useMemo hook returns a memoised value after taking a function and a list of dependencies. It returns the cached value if the dependencies do not change. Otherwise, it will recompute the value using the passed function.
+
+
+4. What is useEffect hook ?   
+   A hook that helps us to perform mutations, subscriptions, timers, logging, and other side effects after all the components has been rendered. The useEffect accepts a function that is imperative in nature and a list of dependencies. When its dependencies change it executes the passed function.
+
+   In react, side effects of some state changes are not allowed in functional components. To perform a task once the rendering is complete and some state changes, we can use useEffect. This hook takes a function to be executed and a list of dependencies, changing which will cause the execution of the hook’s body.
+
+
+5. What is useRef hook ?   
+   The useRef Hook allows you to persist values between renders.
+
+   The useRef Hook allows you to persist values between renders.
+
+   It can be used to access a DOM element directly.
+
+
+6. What is useContext hook ? 
+   Context provides a way to pass data or state through the component tree without having to pass props down manually through each nested component. It is designed to share data that can be considered as global data for a tree of React components, such as the current authenticated user and theme.
+
+
+7. What is useDefferedValue hook ?
+   The useDeferredValue hook allows us to fix slow render problem by implementing a delay before some information is calculated. This works in a very similar way to debouncing and throttling since our deferred value will only be calculated after the important state updates have finished running. 
+
+
+8. What is useImperativeHandle hook ?
+   The useImperativeHandle hook works in the similar phase of useRef hook but only it allows us to modify the instance that is going to be passed with the ref object which provides a reference to any DOM element. Although this hook is used in rare cases, it has some most advanced functionality.
+
+
+9. What is useLayoutEffect hook ?
+   The useLayoutEffect works similarly to useEffect but rather working asynchronously like useEffect hook, it fires synchronously after all DOM loading is done loading. This is useful for synchronously re-rendering the DOM and also to read the layout from the DOM. But to prevent blocking the page loading, we should always use useEffect hook.
+
+   The useLayoutEffect hook works in the same phase as componentDidMount and componentDidUpdate methods. We should only use useLayoutEffect if useEffect isn’t outputting the expected result.
+
+
+10. What is useReducer hook ?
+    The useReducer Hook is the better alternative to the useState hook and is generally more preferred over the useState hook when you have complex state-building logic or when the next state value depends upon its previous value or when the components are needed to be optimized.
+
+
+11. What is useTransition hook ?
+    The useTransition hook enables us to specify which state changes are critical or urgent and which are not.
+    
+    All state changes are viewed as necessary in React. There may be certain quick UI updates, like selecting a value from a dropdown menu, that should take precedence over other updates, like list filtering, which might slow down their execution. A useTransition hook allows us to specify what state changes should run with a lower priority to increase the performance of our application.
